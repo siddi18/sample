@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgb(243, 238, 238); /* Optional: Add background color for visibility */
+    position: absolute; /* Set the positioning to absolute */
+    top: 50%; /* Position the top edge at 50% of the containing element */
+    left: 50%; /* Position the left edge at 50% of the containing element */
+    transform: translate(-50%, -50%); /* Move the container back by half of its own width and height */
+  }
+#result{
+    background-color: rgb(56, 50, 50);
+    color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 20px;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+.rows{
+    display: flex;
+    justify-content: space-around;
+    gap: 1px;
+}
+.rows button{
+    width: 75px;
+    height: 75px;
+    border-radius: 0 0 0 0;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.2s all linear;
+}
+.rows button:hover{
+    background-color: rgba(175, 173, 172, 0.623);
+}
+.rows button:active{
+    background-color: rgb(238, 98, 88);
+}
+#equal{
+    width: 150px;
+}
+#dot{
+    font-weight: 600;
+}
